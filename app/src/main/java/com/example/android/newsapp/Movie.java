@@ -2,50 +2,50 @@ package com.example.android.newsapp;
 
 public class Movie {
 
-    private String mWebTitle;
+    private String mTitle;
 
-    private String mSectionName;
+    private String mSection;
 
     private String mPublicationDate;
 
-    private String mAuthorName;
+    private String mAuthor;
 
     private int mImageResourceId;
 
     private String mUrl;
 
-    public Movie(String webTitle, String sectionName, String publicationDate, String authorName, String url) {
-        mWebTitle = webTitle;
-        mSectionName = sectionName;
+    public Movie(String section, String author, String title, String publicationDate, String url) {
+        mSection = section;
+        mAuthor = author;
+        mTitle = title;
         mPublicationDate = publicationDate;
-        mAuthorName = authorName;
         mUrl = url;
     }
 
 
-    public Movie(String webTitle, String sectionName, String publicationDate, int imageResourceId, String authorName, String url) {
-        mWebTitle = webTitle;
-        mSectionName = sectionName;
+    public Movie(String section, String author, String title, String publicationDate, int imageResourceId, String url) {
+        mSection = section;
+        mAuthor = author;
+        mTitle = title;
         mPublicationDate = publicationDate;
-        mAuthorName = authorName;
+        mUrl = url;
         mImageResourceId = imageResourceId;
-        mUrl = url;
     }
 
-    public String getWebTitle() {
-        return mWebTitle;
+    public String getSection() {
+        return mSection;
     }
 
-    public String getSectionName() {
-        return mSectionName;
+    public String getAuthor(){
+        return mAuthor;
+    }
+
+    public String getTitle() {
+        return mTitle;
     }
 
     public String getPublicationDate() {
         return mPublicationDate;
-    }
-
-    public String getAuthorName(){
-        return mAuthorName;
     }
 
     public String getUrl() {
